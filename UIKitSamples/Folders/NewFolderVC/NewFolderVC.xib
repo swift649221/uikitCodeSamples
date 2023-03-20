@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewFolderVC" customModule="AirBill" customModuleProvider="target">
+            <connections>
+                <outlet property="folderDeleteButton" destination="cPC-w5-wXo" id="1Ps-5F-GwE"/>
+                <outlet property="folderLocationButton" destination="iaW-yI-o7f" id="7qn-kJ-CPC"/>
+                <outlet property="folderLocationLabel" destination="kPs-jH-Qhi" id="RnK-lU-zTt"/>
+                <outlet property="folderTextField" destination="r4s-D7-rvp" id="tp0-bC-n76"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4s-D7-rvp">
+                    <rect key="frame" x="16" y="64" width="382" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nyU-hd-P8S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPs-jH-Qhi">
+                    <rect key="frame" x="32" y="130" width="31" height="14"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaW-yI-o7f" customClass="RightArrowButton" customModule="AirBill" customModuleProvider="target">
+                    <rect key="frame" x="16" y="153" width="382" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="OWU-62-AHl"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPC-w5-wXo">
+                    <rect key="frame" x="16" y="239" width="382" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="MCu-X8-YpY"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Delete Folder"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cPC-w5-wXo" secondAttribute="trailing" constant="16" id="10A-RM-SMd"/>
+                <constraint firstItem="iaW-yI-o7f" firstAttribute="top" secondItem="kPs-jH-Qhi" secondAttribute="bottom" constant="9" id="2Wl-CQ-SCZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r4s-D7-rvp" secondAttribute="trailing" constant="16" id="AU1-7D-GuI"/>
+                <constraint firstItem="iaW-yI-o7f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="F0k-u2-Bii"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iaW-yI-o7f" secondAttribute="trailing" constant="16" id="VyU-2z-pqE"/>
+                <constraint firstItem="kPs-jH-Qhi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="WT2-D6-Hjk"/>
+                <constraint firstItem="kPs-jH-Qhi" firstAttribute="top" secondItem="r4s-D7-rvp" secondAttribute="bottom" constant="22" id="b54-Oa-tv0"/>
+                <constraint firstItem="r4s-D7-rvp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="g8I-hp-B9m"/>
+                <constraint firstItem="r4s-D7-rvp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gTa-OU-m5K"/>
+                <constraint firstItem="cPC-w5-wXo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="n5A-w8-FeG"/>
+                <constraint firstItem="cPC-w5-wXo" firstAttribute="top" secondItem="iaW-yI-o7f" secondAttribute="bottom" constant="42" id="s6o-wa-O0g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kPs-jH-Qhi" secondAttribute="trailing" id="tTE-Ve-mqg"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="47.544642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

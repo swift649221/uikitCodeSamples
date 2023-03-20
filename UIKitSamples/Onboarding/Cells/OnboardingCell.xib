@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.ttf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="OnboardingCell" customModule="AirBill" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYh-Or-1dT">
+                        <rect key="frame" x="20" y="66.5" width="280" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eg-SH-p2H">
+                        <rect key="frame" x="156" y="1" width="8" height="44.5"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="37"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2eg-SH-p2H" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="02Z-id-hRN"/>
+                <constraint firstItem="2eg-SH-p2H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="3Og-c1-2bW"/>
+                <constraint firstItem="NYh-Or-1dT" firstAttribute="top" secondItem="2eg-SH-p2H" secondAttribute="bottom" constant="21" id="9jk-Ao-duV"/>
+                <constraint firstAttribute="trailing" secondItem="NYh-Or-1dT" secondAttribute="trailing" constant="20" id="D8m-v8-xha"/>
+                <constraint firstItem="NYh-Or-1dT" firstAttribute="centerX" secondItem="2eg-SH-p2H" secondAttribute="centerX" id="GZr-FF-CgU"/>
+                <constraint firstItem="NYh-Or-1dT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="LLu-Sx-BDt"/>
+            </constraints>
+            <size key="customSize" width="320" height="185"/>
+            <connections>
+                <outlet property="infoLabel" destination="NYh-Or-1dT" id="ZWx-xC-v2m"/>
+                <outlet property="titleLabel" destination="2eg-SH-p2H" id="7gj-tH-dTi"/>
+            </connections>
+            <point key="canvasLocation" x="181.15942028985509" y="96.763392857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>
